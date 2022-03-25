@@ -8,7 +8,9 @@ const Products = () => {
 
     const handleAddToCart = (product) =>{
         const newCart = [...cart, product];
-        setCart(newCart);
+        if(newCart.length<5){
+            setCart(newCart);
+        }
     }
 
     const clearCart = () =>{
@@ -38,8 +40,8 @@ const Products = () => {
                         <h3 key={item.id}><li>{item.name}</li></h3>
                     )}
                 <div className='cart-btn-container'>
-                    <button>Choose One For Me</button>
-                    <button onClick={clearCart}>Choose Again</button>
+                    <button className='choose-btn'>Choose One For Me</button>
+                    <button className='clear-data-btn' onClick={clearCart}>Choose Again</button>
                 </div>
             </div>
         </div>
