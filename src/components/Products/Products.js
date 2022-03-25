@@ -5,10 +5,14 @@ import './Products.css'
 const Products = () => {
     const[products, setProducts] = useState([]);
     const[cart, setCart] = useState([]);
-    console.log(cart)
 
     const handleAddToCart = (product) =>{
         const newCart = [...cart, product];
+        setCart(newCart);
+    }
+
+    const clearCart = () =>{
+        const newCart = [];
         setCart(newCart);
     }
     
@@ -33,6 +37,10 @@ const Products = () => {
                     cart.map((item) => 
                         <h3 key={item.id}><li>{item.name}</li></h3>
                     )}
+                <div className='cart-btn-container'>
+                    <button>Choose One For Me</button>
+                    <button onClick={clearCart}>Choose Again</button>
+                </div>
             </div>
         </div>
     );

@@ -8,3 +8,9 @@
 .main-header{
     padding: 20px 0px;
 }
+
+@media screen and (max-width: 550px){
+    .main-header-container{
+        width: 100%;
+    }
+}
