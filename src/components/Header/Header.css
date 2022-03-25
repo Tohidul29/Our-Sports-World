@@ -1,0 +1,10 @@
+.main-header-container{
+    margin-top: -30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: #ffffff;
+}
+
+.main-header{
+    padding: 20px 0px;
+}
