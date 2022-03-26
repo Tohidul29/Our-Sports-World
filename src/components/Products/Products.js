@@ -5,9 +5,7 @@ import './Products.css'
 const Products = () => {
     const[products, setProducts] = useState([]);
     const[cart, setCart] = useState([]);
-    console.log(cart);
     const [rand, setRand]= useState([]);
-    console.log(rand);
 
     const handleAddToCart = (product) =>{
         const newCart = [...cart, product];
