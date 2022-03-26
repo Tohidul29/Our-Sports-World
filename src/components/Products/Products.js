@@ -11,6 +11,9 @@ const Products = () => {
         if(newCart.length<5){
             setCart(newCart);
         }
+        else{
+            window.alert('You already added 4 products');
+        }
     }
 
     const clearCart = () =>{
