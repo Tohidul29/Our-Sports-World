@@ -5,6 +5,9 @@ import './Products.css'
 const Products = () => {
     const[products, setProducts] = useState([]);
     const[cart, setCart] = useState([]);
+    console.log(cart);
+    const [rand, setRand]= useState([]);
+    console.log(rand);
 
     const handleAddToCart = (product) =>{
         const newCart = [...cart, product];
@@ -27,15 +30,13 @@ const Products = () => {
         .then(data => setProducts(data))
     },[]);
 
+    const getRandItem = () =>{
+        const randomItem = cart[Math.floor(Math.random() * cart.length)]
+        setRand(randomItem);
+    }
+
     return (
         <div className='main-container'>
-            <div className='products-container'>
-            {
-                products.map(product => <Product key={product.id}
-                product = {product} handleAddToCart = {handleAddToCart}
-                ></Product>)
-            }
-        </div>
             <div className="cart-container">
                 <h2 className='cart-header'>Cart Information</h2>
                 {
@@ -43,9 +44,17 @@ const Products = () => {
                         <h3 key={item.id}><li>{item.name}</li></h3>
                     )}
                 <div className='cart-btn-container'>
-                    <button className='choose-btn'>Choose One For Me</button>
+                    <button className='choose-btn' onClick={getRandItem}>Choose One For Me</button>
                     <button className='clear-data-btn' onClick={clearCart}>Choose Again</button>
+                    <h3>Your Lucky Product is: <span className='one-item'>{rand.name}</span></h3>
                 </div>
+            </div>
+            <div className='products-container'>
+            {
+                products.map(product => <Product key={product.id}
+                product = {product} handleAddToCart = {handleAddToCart}
+                ></Product>)
+            }
             </div>
         </div>
     );

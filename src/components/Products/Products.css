@@ -24,7 +24,7 @@
     display: block;
     padding: 10px;
     width: 150px;
-    margin: 20px 60px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -54,9 +54,20 @@
     cursor: pointer;
 }
 
+.one-item{
+    color: blueviolet;
+}
+
 @media screen and (max-width: 550px){
     .products-container{
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
+    }
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cart-container{
+        width: 100%;
     }
 }
