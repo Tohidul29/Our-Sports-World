@@ -2,6 +2,10 @@
     margin: 20px 80px;
 }
 
+.section-paragraph{
+    font-size: 18px;
+}
+
 @media screen and (max-width: 550px){
     .section-container{
         margin: 10px 40px;

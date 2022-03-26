@@ -5,12 +5,12 @@ const Section = () => {
     return (
         <div className='section-container'>
             <div>
-                <h2>1. How does React Work?</h2>
-                <p>Well, lots of guys have a confusing that, React is a framework. Actually, it's not a framework, it's a JavaScript library. It's has special ability to change our HTML code into JS style. </p>
+                <h2>1. How does React work?</h2>
+                <p className='section-paragraph'>Well, lots of guys have a confusion that, React is a framework. Actually, it's not a framework, it's a JavaScript library. It's has special ability to change our HTML code into JS style. Few reasons why React is Famous nowadays: single page application, no loading issues, create dynamic components by users, world's famous social sites such as Facebook, WhatsApp are depends on that React JS library. It's not only helps us to create single page web application, but also it has ability to create mobile app as well. React employs a declarative approach that makes it easy to reason about your application while also aiming for efficiency and flexibility. It creates basic views for each state in your project, and when your data changes, React updates and renders the appropriate component quickly.</p>
             </div>
             <div>
-                <h2>Second Question</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam numquam facere minima quod doloribus consequuntur rem commodi eaque voluptatum expedita fuga, nisi ipsum nobis repellendus soluta praesentium ipsam veritatis? Sed, velit. Rerum nisi nemo quisquam, ducimus soluta at omnis minus laudantium, doloribus consequuntur esse deserunt quia? Quidem debitis quos suscipit voluptate commodi repudiandae, sequi laudantium ea pariatur, eum saepe ad vel omnis dignissimos repellendus, beatae fugiat. Asperiores fugiat alias fugit ducimus id vero assumenda iste placeat enim consectetur reprehenderit recusandae in quos facilis aperiam incidunt explicabo unde, dolores expedita dolorum. Recusandae amet nostrum similique cupiditate pariatur tempora soluta assumenda iure.</p>
+                <h2>2. How useState works?</h2>
+                <p className='section-paragraph'>useState is one of the important hooks in React JavaScript library. useState allows us to have state variables in functional components. React has two type of components: one is same like ES6 components and another one is the functional components. useState in React is asynchronous. As far as I know in my word that, in useState I can do few things such as: first I need to declare a variable and then I need to set that variable. Behind the scene, React library already write a function which one helps us to do those things automatically. useState takes just one argument which is the intial value, and returns a stateful value and a function to change it, we can destructure it like: const [state, setState] = useState(initialValue); For use this, we use it same like the class example.</p>
             </div>
         </div>
     );

@@ -20,6 +20,7 @@
     background-color: rgba(128, 128, 128, 0.582);
     height: 500px;
     width: 100%;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .cart-btn-container button{
@@ -72,5 +73,6 @@
     }
     .cart-container{
         width: 375px;
+        border-radius: 0;
     }
 }

@@ -44,7 +44,7 @@ const Products = () => {
                 <div className='cart-btn-container'>
                     <button className='choose-btn' onClick={getRandItem}>Choose One For Me</button>
                     <button className='clear-data-btn' onClick={clearCart}>Choose Again</button>
-                    <h3>Your Lucky Product is: <span className='one-item'>{rand.name}</span></h3>
+                    <h3>Your Lucky Product is: <br /> <span className='one-item'>{rand.name}</span></h3>
                 </div>
             </div>
             <div className='products-container'>
